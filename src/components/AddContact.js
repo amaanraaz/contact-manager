@@ -17,19 +17,24 @@ const AddContact = (props)=>{
     }
     return (
         <div className="input-form">
-            <label>Name :</label>
+            <div className="input-field">
             <input type="text" placeholder="Enter Name..." value={name} onChange={(e)=>{
                 setName(e.target.value);
             }} />
-            <label>Email :</label>
+            </div>
+            <div className="input-field">
             <input type="text" placeholder="Enter Email..." value={email} onChange={(e)=>{
                 setEmail(e.target.value);
              }} />
-            <label>Phone No. :</label>
+             </div>
+            <div className="input-field">
             <input type="text" placeholder="Enter Phone Number..." value={phone} onChange={(e)=>{
                 setPhone(e.target.value); 
             }} />
+            </div>
+            <div className="add-btn">
             <button onClick={add}>Add</button>
+            </div>
         </div>
     )
 }
